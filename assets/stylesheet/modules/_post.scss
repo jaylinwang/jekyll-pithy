@@ -1,0 +1,66 @@
+//文章显示
+.post{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .title{
+    padding: 0;
+    margin: 0;
+    font-size: $font-size-big;
+    color: $gray-darker;
+
+    i{
+      color: $primary-color;
+      margin-right: $font-size-small;
+    }
+  }
+
+  .info{
+    margin-top: 10px;
+    color: $gray-dark;
+    li{
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .author{
+      color: $primary-color;
+    }
+    .tag{
+      color: $primary-color;
+      &::before,&::after{
+        color: $white;
+      }
+    }
+
+    .tag::before{
+      content: '['
+    }
+    .tag::after{
+      content: ']'
+    }
+    .tag:hover{
+      color: $blue;
+      text-decoration: none;
+      &::before,&::after{
+        color: $blue;
+      }
+    }
+  }
+  .excerpt{
+    color: $gray-dark;
+  }
+
+  .operate{
+    a,span{
+      color: $gray-dark;
+      margin-left: 3px;
+    }
+    a:hover{
+      color: $gray-darker;
+      text-decoration: none;
+    }
+  }
+}

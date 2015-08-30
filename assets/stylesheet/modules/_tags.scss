@@ -1,0 +1,20 @@
+.tags{
+  .title{
+    text-align: center;
+  }
+  .list{
+    a{
+      display: inline-block;
+      margin-right: 5px;
+      color: $link-color;
+    }
+
+    a:hover{
+      color: $hover-color;
+    }
+  }
+
+  .count{
+    color: $primary-color;
+  }
+}

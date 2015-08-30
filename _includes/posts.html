@@ -1,0 +1,25 @@
+<!-- 文章列表展示 -->
+<div class="panel panel-pithy posts">
+    <div class="panel-heading">
+      <h3 class="title">
+        <a href="{{ post.url | prepend: site.url }}"><i class="fa fa-bookmark-o"></i>{{post.title}}</a>
+      </h3>
+    </div>
+    <div class="panel-body excerpt">
+        {% if post.excerpt.size > 32 %}
+          {{ post.excerpt }}
+        {% else %}
+          {{ post.content | strip_html | strip_newlines | truncate: 160 }}
+        {% endif %}
+    </div>
+    <div class="panel-footer operate">
+        <div class="pull-right">
+          <span class="time"><i class="fa fa-clock-o"></i>{{ post.date | date: "%Y年%m月%d日"}}</span>
+          <a class="read" href="{{ post.url | prepend: site.url }}#post-content"><i
+                  class="fa fa-gg"></i>阅读全文</a>
+          <a class="comment" href="{{ post.url | prepend: site.url }}#post-comment"><i
+                  class="fa fa-comment-o"></i>评论</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

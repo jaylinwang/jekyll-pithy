@@ -1,0 +1,43 @@
+.navbar-pithy {
+  min-height: 40px;
+
+  background-color: $white;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px $gray-dark;
+
+  .navbar-brand {
+    height: 40px;
+    padding: 10px 15px;
+
+    color: $primary-color;
+  }
+
+  .navbar-brand:hover{
+    color: $primary-color;
+  }
+
+  .navbar-form {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $gray-darker;
+    line-height: 20px;
+    border: none;
+  }
+
+  .navbar-nav > li > a:hover {
+      background-color: $gray-lighter;
+  }
+
+  .navbar-toggle{
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding:5px 10px;
+    background: $primary-color;
+    color: $white;
+  }
+}

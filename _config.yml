@@ -1,0 +1,36 @@
+permalink: /:year/:month/:day/:title/
+
+# 站点设置
+title: "Guovz-果为之"
+email: pzhuwjl@qq.com
+description: "Guovz,果为之,王继林的个人博客"
+keywords: "guovz,果为之,王继林"
+
+# 用户信息设置
+weibo_username: Guovz
+github_username: guovz
+
+# Markdown设置
+kramdown:
+  input:  GFM
+  use_coderay: true
+  coderay:
+    coderay_line_numbers:  nil
+
+
+
+# 地址设置
+baseurl: ""
+# url: "http://www.guovz.com"
+# imgrepo: "http://www.guovz.com/static/img"
+url: "http://127.0.0.1:4000"
+imgrepo: "http://127.0.0.1:4000/static/img"
+
+# 分页设置
+paginate: 10
+paginate_path: "page/:num"
+
+#scss设置
+sass:
+    sass_dir: /assets/stylesheet
+    style: :compressed

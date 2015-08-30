@@ -1,0 +1,39 @@
+.author{
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .avastar{
+    text-align: center;
+    img{
+       height: 80px;
+       width: 80px;
+
+       border-radius: 100%;
+       border: 4px solid $primary-color;
+    }
+  }
+  .social{
+    text-align: center;
+    line-height: 30px;
+    li{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+
+        border: 1px solid $primary-color;
+      }
+      li>a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: $primary-color;
+      }
+      li>a:hover{
+        background: $primary-color;
+        color: $white;
+      }
+  }
+}

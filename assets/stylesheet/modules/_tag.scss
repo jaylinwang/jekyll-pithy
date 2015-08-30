@@ -1,0 +1,34 @@
+.tag{
+  .post{
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+
+      background-color: $gray-lighter;
+      color: $gray-dark;
+      box-shadow: 1px 1px 3px $gray-dark;
+    }
+    .post-date{
+      font-size: $font-size-small;
+      i{
+        margin-right: $font-size-small;
+      }
+    }
+    .post-title{
+        color: $link-color;
+    }
+    a:hover{
+      text-decoration: none;
+
+      .post-title{
+          color: $hover-color;
+      }
+    }
+  }
+}

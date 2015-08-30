@@ -1,0 +1,35 @@
+//文章列表
+.posts{
+  .title{
+    padding: 0;
+    margin: 0;
+    a{
+        font-size: $font-size-big;
+        color: $link-color;
+
+        i{
+          color: $primary-color;
+          margin-right: $font-size-small;
+        }
+    }
+    a:hover{
+      text-decoration: none;
+      color: $hover-color;
+    }
+  }
+
+  .excerpt{
+    color: $gray-dark;
+  }
+
+  .operate{
+    a,span{
+      color: $gray-dark;
+      margin-left: 3px;
+    }
+    a:hover{
+      color: $gray-darker;
+      text-decoration: none;
+    }
+  }
+}

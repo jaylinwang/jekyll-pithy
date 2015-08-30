@@ -1,0 +1,27 @@
+---
+layout: default
+title: Category
+permalink: /category/
+scripts: [category.js]
+---
+<div class="col-md-9 col-content">
+    <!-- 所有分类下文章 -->
+    <section class="category hide" id="all">
+      {% for post in site.posts %}
+          {% include posts.html%}
+      {% endfor %}
+    </section>
+
+    <!-- 每一个分类下文章 -->
+    {% for category in site.categories%}
+    <section class="category hide" id="{{category | first}}">
+      {% for post in category.last %}
+            {% include posts.html%}
+      {% endfor %}
+    </section>
+    {% endfor %}
+
+</div>
+<div class="col-md-3 col-sidebar">
+    {% include categories.html %}
+</div>

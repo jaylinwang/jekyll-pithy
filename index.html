@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="col-md-9 col-content">
+    {% for post in paginator.posts %}
+      {% include posts.html%}
+    {% endfor %}
+    <nav>
+        <ul class="pagination pagination-posts">
+          {% if paginator.total_pages > 1 %}
+              {% if paginator.previous_page %}
+                <li>
+                  <a href="{{ paginator.previous_page_path | prepend: site.url}}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                </li>
+              {% endif %}
+              {% for page in (1..paginator.total_pages) %}
+                  {% if page == paginator.page %}
+                    <li class="active"><span>{{ page }}</span></li>
+                  {% elsif page == 1 %}
+                    <li><a href="{{ site.url }}">{{ page }}</a></li>
+                  {% else %}
+                    <li><a href="{{ site.url}}/page/{{ page }}">{{ page }}</a></li>
+                  {% endif %}
+                  {% endfor %}
+              {% if !paginator.next_page %}
+                  <li>
+                    <a href="{{ paginator.next_page_path | prepend: site.url}}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                  </li>
+              {% endif %}
+            {% endif %}
+        </ul>
+    </nav>
+</div>
+<div class="col-md-3 col-sidebar">
+    {% include author.html%}
+    {% include categories.html%}
+    {% include tags.html%}
+</div>

@@ -1,0 +1,23 @@
+<!-- 分类列表 -->
+<div class="panel panel-default categories">
+    <div class="panel-heading title">
+        文章分类
+    </div>
+    <div class="panel-body list">
+        <ul>
+          <li>
+              <a class="catelink" href="{{ site.url }}/category/#all" data-target-cate="#all">
+                  所有分类&nbsp;<span class="count">[{{ site.posts.size }}]</span>
+              </a>
+          </li>
+          {% for category in site.categories %}
+          <li>
+              <a class="catelink" href="{{ site.url }}/category/#{{category.first}}" data-target-cate="#{{category.first}}">
+                  {{ category.first }}&nbsp;<span class="count">[{{ category.last.size }}]</span>
+              </a>
+          </li>
+
+          {% endfor %}
+        </ul>
+    </div>
+</div>

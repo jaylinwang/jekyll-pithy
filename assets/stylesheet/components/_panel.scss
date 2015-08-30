@@ -1,0 +1,33 @@
+.panel-pithy{
+  padding: 20px 30px;
+  border-radius: 0;
+  box-shadow: 1px 1px 1px 1px $gray-light;
+
+  .panel-heading,
+  .panel-body,
+  .panel-footer{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $white;
+  }
+
+  .panel-heading{
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-light;
+  }
+  .panel-body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .panel-footer{
+    padding-top:20px;
+    padding-bottom: 0;
+    background-color: $white;
+  }
+}
+
+.panel-default{
+  border-radius: 0;
+  box-shadow: 1px 1px 1px 1px $gray-light;
+}

@@ -1,0 +1,18 @@
+.pagination-posts{
+  margin-top: 0;
+  margin-bottom: 0;
+
+  li>a{
+    color: $gray-darker;
+  }
+
+  .active>span,
+  .active>span:focus,
+  .active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+}

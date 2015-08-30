@@ -1,0 +1,13 @@
+<!-- tag列表 -->
+<div class="panel panel-default tags">
+    <div class="panel-heading title">
+        标签云
+    </div>
+    <div class="panel-body list">
+        {% for tag in site.tags %}
+            <a class="taglink" href="{{ site.url }}/tag/#{{tag.first}}" data-target-cate="#{{tag.first}}">
+                {{ tag.first }}
+            </a>
+        {% endfor %}
+    </div>
+</div>

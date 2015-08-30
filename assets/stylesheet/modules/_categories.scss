@@ -1,0 +1,24 @@
+.categories{
+  ul{
+    padding-left: 20px;
+  }
+  .title{
+    text-align: center;
+  }
+  .list{
+    li{
+      margin-bottom: 5px;
+    }
+    li>a{
+      color: $link-color;
+    }
+    li>a:hover{
+      color: $hover-color;
+      text-decoration: none;
+    }
+  }
+
+  .count{
+    color: $primary-color;
+  }
+}
