@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-id: about-me
+id: id_about_me
 permalink: /about/
 ---
 
