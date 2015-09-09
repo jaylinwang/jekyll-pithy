@@ -53,6 +53,12 @@
     color: $gray-dark;
   }
 
+  .content{
+    ul{
+      list-style: disc inside;
+    }
+  }
+
   .operate{
     a,span{
       color: $gray-dark;
