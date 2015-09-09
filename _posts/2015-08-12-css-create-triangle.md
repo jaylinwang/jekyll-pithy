@@ -4,6 +4,7 @@ title: 使用CSS实现三角形
 tags:  [triangle]
 categories: [CSS3]
 author: Jaylin
+excerpt: "类似三角形的形状的元素在网页中是比较常用的，我们可以用图片或者CSS元素达到我们想要的效果。这里主要是讲自己使用HTML+CSS实现三角形的一点心得。"
 ---
 
 类似三角形的形状的元素在网页中是比较常用的，我们可以用图片或者CSS元素达到我们想要的效果。这里主要是讲自己使用HTML+CSS实现三角形的一点心得。
