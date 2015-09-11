@@ -32,7 +32,7 @@ npm config set cache "D:\nodejs\node_cache"
 npm config set prefix "D:\nodejs\node_global"
 ```
 
-- 设置NODE_PATH为`D:\nodejs\node_global\node_modules`
+- 设置NODE_PATH为:(全局路径)\node_modules
 
 ---
 
