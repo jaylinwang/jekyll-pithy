@@ -2,7 +2,7 @@
 layout: post
 title: 基于Express和MongoDB创建NodeJS应用(一)
 tags:  [Node.js,Express,MongoDB]
-categories: [Node]
+categories: [Node.js]
 author: Jaylin
 excerpt: ""
 ---
