@@ -1,10 +1,10 @@
 permalink: /:year/:month/:day/:title/
 
 # 站点设置
-title: "Guovz-果为之"
+title: "Guovz"
 email: pzhuwjl@qq.com
-description: "Guovz,果为之,王继林的个人博客"
-keywords: "guovz,果为之,王继林"
+description: "王继林的个人博客"
+keywords: "Guovz"
 
 # 用户信息设置
 weibo_username: Guovz
