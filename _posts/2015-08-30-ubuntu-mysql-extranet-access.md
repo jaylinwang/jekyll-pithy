@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu下MySQL配置为外网访问
 tags:  [ubuntu,MySQL]
-categories: [ubuntu,MySQL]
+categories: [数据库应用]
 author: Jaylin
 excerpt: "安装MySQL后默认外网无法连接，但是很多时候我们想要在外网访问方便管理。在这里，简单叙述一下自己在配置过程中的操作。"
 ---
