@@ -22,7 +22,7 @@ kramdown:
 # 地址设置
 baseurl: "/jekyll-pithy"
 url: "http://guovz.github.io"
-# url: "http://127.0.0.1:4000"
+#url: "http://127.0.0.1:4000"
 
 # 分页设置
 paginate: 10

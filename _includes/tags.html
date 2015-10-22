@@ -5,7 +5,7 @@
     </div>
     <div class="panel-body list">
         {% for tag in site.tags %}
-            <a class="taglink" href="{{ site.url }}{{site.baseurl}}/tag/#{{tag.first}}" data-target-cate="#{{tag.first}}">
+            <a class="taglink" href="{{site.baseurl}}/tag/#{{tag.first}}" data-target-cate="#{{tag.first}}">
                 {{ tag.first }}
             </a>
         {% endfor %}
