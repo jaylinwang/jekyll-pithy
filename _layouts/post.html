@@ -13,7 +13,7 @@ layout: default
                     <li>最后编辑：{{ page.date | date: "%Y年%m月%d日" }}</li>
                     <li>标签：
                      {% for tag in page.tags %}
-                         <a class="tag" href="{{ site.url }}/tag/#{{ tag }}">{{ tag }}</a>
+                         <a class="tag" href="{{ site.url }}{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
                      {% endfor %}
                     </li>
                 </ul>
