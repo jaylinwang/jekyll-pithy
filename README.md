@@ -3,10 +3,6 @@
 
 pithy是一款适用于jekyll的博客应用主题，基于bootstrap前端框架开发。本着简约的视觉效果设计，目的是希望博客的浏览者能够更多的看到博客内容。
 
-完成pithy的同时，我也搭建了自己的博客:
-
-地址: [http://www.guovz.com](http://www.guovz.com)
-
 使用说明
 ===
 
