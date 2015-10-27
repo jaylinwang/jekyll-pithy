@@ -12,14 +12,12 @@
   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 
   <!-- pithy样式引入 -->
-  <link rel="stylesheet" href="/assets/stylesheet/pithy.css">
+  <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheet/pithy.css">
 
   <!--bootstrap支持IE8-->
   <!--[if lt IE 9]>
   <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
   <![endif]-->
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
