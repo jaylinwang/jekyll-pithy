@@ -34,7 +34,7 @@ sass:
     style: :compressed
 
 # duoshuo设置
-duoshuo_shortname: guovz
+# duoshuo_shortname: 
 
 # 百度统计设置
 # baidu_analysis:
