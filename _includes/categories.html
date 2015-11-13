@@ -1,13 +1,13 @@
 <!-- 分类列表 -->
 <div class="panel panel-default categories">
     <div class="panel-heading title">
-        文章分类
+        Categories
     </div>
     <div class="panel-body list">
         <ul>
           <li>
               <a class="catelink" href="{{site.baseurl}}/category/#all" data-target-cate="#all">
-                  所有分类&nbsp;<span class="count">[{{ site.posts.size }}]</span>
+                  Categories&nbsp;<span class="count">[{{ site.posts.size }}]</span>
               </a>
           </li>
           {% for category in site.categories %}
