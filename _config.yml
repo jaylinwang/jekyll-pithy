@@ -1,34 +1,34 @@
 permalink: /:year/:month/:day/:title/
 
-# Site Config
-title: "pithy"
-email: abcde@xyz.com
-description: "Blog power by pithy"
+# 站点设置
+title: "Guovz"
+email: pzhuwjl@qq.com
+description: "王继林的个人博客"
 keywords: "Guovz"
 
-# User Info Config
-twitter_username: pithy
-github_username: pithy
+# 用户信息设置
+weibo_username: Guovz
+github_username: guovz
 
-# Markdown Config
+# Markdown设置
 kramdown:
   input:  GFM
-  enable_coderay: true
+  use_coderay: true
   coderay:
     coderay_line_numbers:  nil
 
 
 
-# URL config
-baseurl: ""
+# 地址设置
+baseurl: "/jekyll-pithy"
 url: "http://127.0.0.1:4000"
 
 
-# pageinate config
+# 分页设置
 paginate: 10
 paginate_path: "page/:num"
 
-#scss config
+#scss设置
 sass:
     sass_dir: /assets/stylesheet
     style: :compressed
