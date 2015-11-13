@@ -2,7 +2,7 @@
 layout: post
 title: Windows下安装Node.js v4.0
 tags:  [node,install]
-categories: [category5]
+categories: [Node开发]
 author: Jaylin
 excerpt: "Node.js 4.0发布之际，迫不及待想要的安装使用。下面讲述自己在windows下安装及配置node.js的过程."
 ---
