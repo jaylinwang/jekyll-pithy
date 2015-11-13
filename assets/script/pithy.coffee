@@ -14,5 +14,5 @@ initTotop = () ->
     $("#totop").hide() if winPos < window.screen.height
 
 bindToTop = () ->
-  $('#totop').on 'click',() ->
-    $('html, body').animate scrollTop: 0,1000
+  $('#totop').on 'click', () ->
+    $('html, body').animate scrollTop: 0, 1000
