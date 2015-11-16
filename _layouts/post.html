@@ -9,9 +9,9 @@ layout: default
                   <i class="fa fa-bookmark-o"></i>{{page.title}}
                 </h3>
                 <ul class="info">
-                    <li>作者：<span class="author">{{ page.author }}</span></li>
-                    <li>最后编辑：{{ page.date | date: "%Y年%m月%d日" }}</li>
-                    <li>标签：
+                    <li>Author：<span class="author">{{ page.author }}</span></li>
+                    <li>Last Edit{{ page.date | date: "%Y.%m.%d" }}</li>
+                    <li>Tag：
                      {% for tag in page.tags %}
                          <a class="tag" href="{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
                      {% endfor %}
@@ -28,5 +28,6 @@ layout: default
     <div class="col-md-3 col-sidebar">
         {% include categories.html%}
         {% include tags.html%}
+        {% include comment.html %}
     </div>
 </div>
