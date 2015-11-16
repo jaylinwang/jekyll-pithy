@@ -1,4 +1,14 @@
 <!-- Share -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="panel-footer operate">
     <div class="pull-left">
         <div class="ds-share flat" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-images=""
@@ -6,9 +16,11 @@
             <div class="ds-share-inline">
               <ul  class="ds-share-icons-16">
                 <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">Share with</a></li>
-                <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">Facebook</a></li>
-                <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">Twitter</a></li>
-                <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">Google+</a></li>
+                <li class="g-plus" data-action="share"></li>
+                
+                <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
+                
+                <li class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></li>
               </ul>
               <div class="ds-share-icons-more">
               </div>
