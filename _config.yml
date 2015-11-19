@@ -1,3 +1,6 @@
+#version
+version: "1.0"
+
 permalink: /:year/:month/:day/:title/
 
 # 站点设置
