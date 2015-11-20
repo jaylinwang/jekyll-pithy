@@ -7,17 +7,18 @@
     <meta name="keywords" content="{{ page.title }},{% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %},{{ site.keywords }}" />
     <meta name="description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
-  <!--官方css引入-->
-  <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon" />
 
-  <!-- pithy样式引入 -->
+  <!--Font awesome-->
+  <link href="{{ site.baseurl}}/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- The pithy main css -->
   <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheet/pithy.css">
 
-  <!--bootstrap支持IE8-->
+
   <!--[if lt IE 9]>
   <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
   <![endif]-->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.rss.path | prepend: site.baseurl | prepend: site.url }}" />
 </head>

@@ -1,51 +1,10 @@
-<!--官方JS引入-->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--the js include-->
+<script src="{{ site.baseurl}}/assets/vendor/jquery/jquery.min.js"></script>
 <script src="{{ site.baseurl}}/assets/script/pithy.js"></script>
-{% for script in page.scripts %}
-  <script type="text/javascript" src="{{'/assets/script/' | append: script | prepend: site.baseurl }}"></script>
-{% endfor %}
 
-{% if site.duoshuo.enable%}
-<!-- duoshuo end -->
-<!-- javascript start (one page insert once) -->
-<script type="text/javascript">
-  var duoshuoQuery = {short_name: "{{ site.duoshuo.short_name }}"};
-  (function () {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-<!-- javascript end -->
+{% if site.duoshuo.enable %}
+  {% include comment/duoshuo.html%}
 {% endif %}
-
-
 {% if site.disqus.enable%}
-
-<script>
-  /**
-   * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-   * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-   */
-  /*
-   var disqus_config = function () {
-   this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-   };
-   */
-  (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-
-    s.src = '//guovz.disqus.com/embed.js';
-
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  {% include comment/disqus.html%}
 {% endif %}

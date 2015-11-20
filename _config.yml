@@ -1,4 +1,9 @@
 #---------------------------------------------------------------
+# Theme version infromation
+#---------------------------------------------------------------
+version: 1.0
+
+#---------------------------------------------------------------
 # Build setting
 #---------------------------------------------------------------
 gems: [jekyll-paginate]
@@ -43,7 +48,7 @@ kramdown:
 
 # RSS
 rss:
-  url: "/feed.xml"
+  path: "/feed.xml"
   icon: "rss"
 
 
@@ -78,6 +83,9 @@ socials:
 # Site comment setting
 #---------------------------------------------------------------
 
+comment:
+  enable: true
+
 # duoshuo
 duoshuo:
   enable: true
@@ -89,6 +97,15 @@ discus:
   short_name: "guovz"
 
 
+#---------------------------------------------------------------
+# Site analysis setting
+#---------------------------------------------------------------
+# Baidu analysis
+baidu_analysis:
+  enable: true
+  token: "your baidu analysis token"
 
-# 百度统计设置
-# baidu_analysis:
+# Google analysis
+google_analysus:
+  enable: true
+  token:

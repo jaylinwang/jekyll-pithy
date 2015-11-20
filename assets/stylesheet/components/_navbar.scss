@@ -1,14 +1,13 @@
 .navbar-pithy {
-  min-height: 40px;
-
+  min-height: 50px;
   background-color: $white;
   border: none;
   border-radius: 0;
-  box-shadow: 1px 1px 3px $gray-dark;
+  box-shadow: 1px 1px 5px $gray-lighter;
 
   .navbar-brand {
-    height: 40px;
-    padding: 10px 15px;
+    height: 50px;
+    padding: 15px;
 
     color: $primary-color;
   }
@@ -22,8 +21,8 @@
     margin-bottom: 4px;
   }
   .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: $gray-darker;
     line-height: 20px;
     border: none;

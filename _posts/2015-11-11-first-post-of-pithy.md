@@ -1,8 +1,8 @@
 ---
 layout: post
 title: First post of pithy
-tags:  [first tag]
-categories: [first categories]
+tags:  [first_tag]
+categories: [first_categories]
 author: pithy
 ---
 

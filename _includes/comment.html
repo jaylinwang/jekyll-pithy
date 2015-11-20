@@ -1,11 +1,14 @@
 <!-- comment -->
-{{ site.disqus.short_name }}
-
 <div id="post-comment" class="panel panel-default">
     <div class="panel-body">
-        <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{page.title}}"
-             data-url="{{page.url | prepend: site.url}}"></div>
-        <div id="disqus_thread"></div>
+        {% if site.duoshuo.enable==true %}
+        <div class="ds-thread" data-thread-key="{{ page.id }}"
+             data-title="{{page.title}}" data-url="{{page.url | prepend: site.url}}"></div>
+        {% endif %}
+
+        {% if site.disqus.enable %}
+            <div id="disqus_thread"></div>
+        {% endif %}
     </div>
 </div>
 

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="col-md-9 col-content">
+    <section class="category">
+      {% for post in page.category.last %}
+            {% include posts.html%}
+      {% endfor %}
+    </section>
+</div>
+<div class="col-md-3 col-sidebar">
+    {% include categories.html %}
+</div>

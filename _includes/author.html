@@ -13,7 +13,7 @@
             </li>
             {% endfor %}
             <li>
-                <a href="{{site.rss.url}}" target="_blank"><i class="fa fa-{{site.rss.icon}}"></i></a>
+                <a href="{{ site.rss.path | prepend: site.baseurl | prepend: site.url }}" target="_blank"><i class="fa fa-{{site.rss.icon}}"></i></a>
             </li>
         </ul>
     </div>
