@@ -6,20 +6,20 @@ pithy是一款适用于jekyll的博客应用主题，基于bootstrap前端框架
 使用说明
 ===
 
-本主题是自由，免费，开源的，你可以克隆为新的仓库作为自己的博客。当然，在克隆仓库时为本主题加颗星，在使用时注明power by pithy，那将是对我最大的支持和鼓励。
+本主题是自由，免费，开源的，你可以克隆为新的仓库作为自己的博客。当然，在克隆仓库时为本主题加颗星，保留power by pithy，那将是对我最大的支持和鼓励。
 
 主题效果
 ===
 - 首页
-- 
+-
 ![首页](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-index.jpg)
 
 - 列表
-- 
+-
 ![列表](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-list.jpg)
 
 - 文章
-- 
+-
 ![文章](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-post.jpg)
 
 反馈
