@@ -113,5 +113,5 @@ baidu_analysis:
 
 # Google analysis
 google_analysus:
-  enable: true
-  token:
+  enable: false
+  token: "your google analysis token"
