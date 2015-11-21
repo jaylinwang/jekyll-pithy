@@ -90,12 +90,12 @@ comment:
 # duoshuo
 duoshuo:
   enable: true
-  short_name: "pithytest"
+  short_name: "your duoshuo short_name"
 
 # disqus
 disqus:
   enable: false
-  short_name: "guovz"
+  short_name: "your disqus short_name"
 
 #---------------------------------------------------------------
 # Site share setting

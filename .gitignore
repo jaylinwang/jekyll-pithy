@@ -1,3 +1,5 @@
 _site
 .sass-cache
 .idea
+
+_config.yml
