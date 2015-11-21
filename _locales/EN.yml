@@ -3,3 +3,19 @@ en:
   menu:
     home: "HOME"
     about: "ABOUT"
+
+  list:
+    read_more: "READ MORE"
+    comment: "COMMENT"
+
+  sidebar:
+    categories: "CATEGORIES"
+    tags: "TAGS"
+
+  post:
+    author: "AUTHOR"
+    update_date: "UPDATE DATE"
+    tags: "TAGS"
+
+  about:
+    title: "ABOUT AUTHOR"

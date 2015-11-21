@@ -1,7 +1,7 @@
 <!-- comment -->
 <div id="post-comment" class="panel panel-default">
     <div class="panel-body">
-        {% if site.duoshuo.enable==true %}
+        {% if site.duoshuo.enable %}
         <div class="ds-thread" data-thread-key="{{ page.id }}"
              data-title="{{page.title}}" data-url="{{page.url | prepend: site.url}}"></div>
         {% endif %}
@@ -11,4 +11,3 @@
         {% endif %}
     </div>
 </div>
-

@@ -1,18 +1,15 @@
 ---
 layout: default
-title: Category
 permalink: /tag/
 ---
 <div class="col-md-9 col-content">
-    <!-- 所有标签下文章 -->
-    <!-- 每一个分类下文章 -->
     {% for tag in site.tags%}
     <div class="panel panel-pithy tag" id="{{tag.first}}">
       <div class="panel-heading">{{tag.first}}</div>
       <div class="panel-body">
         {% for post in tag.last %}
           <div class="col-md-3 post">
-            <a href="">
+            <a href="{{ post.url | prepend: site.baseurl}}">
               <p class="post-date"><i class="fa fa-calendar-o"></i>{{post.date | date: "%Y-%m-%d"}}</p>
               <p class="post-title">{{post.title}}</p>
             </a>
@@ -24,5 +21,5 @@ permalink: /tag/
 
 </div>
 <div class="col-md-3 col-sidebar">
-    {% include tags.html %}
+    {% include sidebar_tags.html %}
 </div>

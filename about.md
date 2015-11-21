@@ -1,6 +1,4 @@
 ---
-layout: page
-title: About Me
-id: id_about_me
+layout: about
 permalink: /about/
 ---

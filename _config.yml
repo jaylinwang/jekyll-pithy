@@ -20,6 +20,7 @@ sass:
 #---------------------------------------------------------------
 
 # Site
+## You can create a locale setting at _locales and name *.yml
 title: ""
 description: "This is a simple theme for jekyll"
 keywords: "Pithy"
@@ -35,7 +36,7 @@ permalink: /:year/:month/:day/:title
 # Pagination
 ## Set per_page to 0 to disable pagination
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 
 
 # Writing
@@ -89,13 +90,18 @@ comment:
 # duoshuo
 duoshuo:
   enable: true
-  short_name: "guovz"
+  short_name: "pithytest"
 
 # disqus
-discus:
+disqus:
   enable: false
   short_name: "guovz"
 
+#---------------------------------------------------------------
+# Site share setting
+#---------------------------------------------------------------
+duoshuo_share:
+    enable: true
 
 #---------------------------------------------------------------
 # Site analysis setting

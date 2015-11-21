@@ -19,11 +19,19 @@
 
   .info{
     margin-top: 10px;
+    font-size: 12px;
     color: $gray-dark;
     li{
       display: inline-block;
+      padding: 0 10px;
       margin-right: 5px;
+      border-right: 1px solid $gray;
+
+      &:last-child{
+        border: none;
+      }
     }
+
 
     .author{
       color: $primary-color;
@@ -32,20 +40,6 @@
       color: $primary-color;
       &::before,&::after{
         color: $white;
-      }
-    }
-
-    .tag::before{
-      content: '['
-    }
-    .tag::after{
-      content: ']'
-    }
-    .tag:hover{
-      color: $blue;
-      text-decoration: none;
-      &::before,&::after{
-        color: $blue;
       }
     }
   }

@@ -19,12 +19,12 @@ layout: default
                   {% elsif page == 1 %}
                     <li><a href="{{ site.url }}">{{ page }}</a></li>
                   {% else %}
-                    <li><a href="{{ site.url}}/page/{{ page }}">{{ page }}</a></li>
+                    <li><a href="{{ site.baseurl | prepend: site.url }}/page{{ page }}">{{ page }}</a></li>
                   {% endif %}
                   {% endfor %}
               {% if !paginator.next_page %}
                   <li>
-                    <a href="{{ paginator.next_page_path | prepend: site.url}}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url}}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
                   </li>
               {% endif %}
             {% endif %}
@@ -32,7 +32,7 @@ layout: default
     </nav>
 </div>
 <div class="col-md-3 col-sidebar">
-    {% include author.html%}
-    {% include categories.html%}
-    {% include tags.html%}
+    {% include sidebar_author.html%}
+    {% include sidebar_categories.html%}
+    {% include sidebar_tags.html%}
 </div>

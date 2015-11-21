@@ -6,7 +6,7 @@ module Jekyll
       @dir = dir
       @name = 'index.html'
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
+      self.read_yaml(File.join(base, '_layouts'), 'category.html')
       self.data['category'] = category
     end
   end
@@ -15,9 +15,9 @@ module Jekyll
     safe true
 
     def generate(site)
-      if site.layouts.key? 'category_index'
-          dir = 'categories'
-          site.categories.each do |category|
+      if site.layouts.key? 'category'
+            dir = 'categories'
+            site.categories.each do |category|
             site.pages << CategoryPage.new(site, site.source, File.join(dir, category.first), category)
         end
       end

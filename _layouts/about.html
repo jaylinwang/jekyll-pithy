@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container">
+    <div id="post-content" class="panel panel-pithy post">
+      <div class="panel-heading">
+        <h3 class="title">
+          <i class="fa fa-bookmark-o"></i> {{ "about.title" | translate }}
+        </h3>
+      </div>
+      <div class="panel-body">
+        {{content}}
+      </div>
+      {% if site.duoshuo_share.enable%}
+        {% include share.html%}
+      {% endif %}
+  </div>
+  <!--
+      if config set comment enable,include comment
+  -->
+  {% if site.comment.enable %}
+      {% include comment.html%}
+  {% endif %}
+</div>

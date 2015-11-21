@@ -9,9 +9,14 @@ layout: default
                   <i class="fa fa-bookmark-o"></i>{{page.title}}
                 </h3>
                 <ul class="info">
-                    <li>作者：<span class="author">{{ page.author }}</span></li>
-                    <li>最后编辑：{{ page.date | date: "%Y年%m月%d日" }}</li>
-                    <li>标签：
+                    <li>
+                      {{ 'post.author' | translate }} <span class="author">{{ page.author }}</span>
+                    </li>
+                    <li>
+                      {{ 'post.update_date' | translate }} {{ page.date | date: "%Y年%m月%d日" }}
+                    </li>
+                    <li>
+                      {{ 'post.tags' | translate }}
                      {% for tag in page.tags %}
                          <a class="tag" href="{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
                      {% endfor %}
@@ -21,7 +26,9 @@ layout: default
             <div class="panel-body content">
                 {{content}}
             </div>
-            {% include share.html%}
+            {% if site.duoshuo_share.enable%}
+              {% include share.html%}
+            {% endif %}
         </div>
         <!--
             if config set comment enable,include comment
@@ -31,7 +38,7 @@ layout: default
         {% endif %}
     </div>
     <div class="col-md-3 col-sidebar">
-        {% include categories.html%}
-        {% include tags.html%}
+        {% include sidebar_categories.html%}
+        {% include sidebar_tags.html%}
     </div>
 </div>
