@@ -26,6 +26,7 @@ layout: default
             <div class="panel-body content">
                 {{content}}
             </div>
+            {% include post_nav.html%}
             {% if site.duoshuo_share.enable%}
               {% include share.html%}
             {% endif %}
