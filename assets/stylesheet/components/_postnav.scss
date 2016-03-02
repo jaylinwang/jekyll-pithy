@@ -1,0 +1,20 @@
+.post-nav {
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 10px 0px;
+    white-space: nowrap;
+    border-top: 1px solid #ddd;
+}
+
+.post-nav a.prev {
+    float: left;
+}
+
+.post-nav a.next {
+    float: right;
+}
+
+.post-nav a {
+    display: inline-block;
+    font-size: 1.4rem;
+}
